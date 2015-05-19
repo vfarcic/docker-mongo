@@ -8,6 +8,12 @@ sudo docker run -d --name mongo3 -p 3333:27017 vfarcic/mongo --replSet rs0
 
 Wait until MongoDB is up and running. That can be seen by monitoring logs. When "waiting for connections on port 27017" is output, DB is ready.
 
+```bash
+sudo docker logs -f mongo1
+sudo docker logs -f mongo2
+sudo docker logs -f mongo3
+```
+
 In one of the instances, run following (change IPs to those of your host):
 
 ```bash
